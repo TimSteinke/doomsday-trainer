@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doomsday Method Trainer</title>
     <link rel="stylesheet" href="./output.css">
-    <script src="./doomsday.js" defer></script>
+    <script src="./doomsday.js" defer type="module"></script>
+    <script src="./site_gen.js" defer type="module"></script>
 </head>
 
-<body class="bg-slate-100 dark:bg-slate-950 text-slate-950 dark:text-slate-300">
-    <div class="w-2/3 ml-auto mr-auto mt-20 border border-3 border-black dark:border-white">
-        <p id="date" class="text-center"></p>
-        <div id="controls" class="columns-2 w-1/4 m-auto md:w-5/6">
-            <button id="new_date" type="button" class="bg-lime-800">
-                New Date
+<body class="bg-stone-50 dark:bg-stone-950 text-slate-950 dark:text-slate-200 font-mono">
+    <div class="container md:w-3/4 mx-auto mt-16 border-4 p-16 pt-7 rounded-lg border-slate-950 dark:border-white ">
+        <p id="date" class="text-center mb-7 text-xl"></p>
+        <div id="day_btns_div" class="grid grid-cols-2 grid-flow-row md:grid-cols-7 gap-2 mb-10">
+            <button id="Sun" type="button" class="hover:myshadow dark:hover:bg-pink-700 bg-lime-100 dark:bg-inherit p-2 h-30 border
+                                                  rounded-xl border-slate-950 dark:border-slate-50">
+                Sun <b>[1]</b>
             </button>
-            <button id="check_day" type="button" />
-                Check
+        </div>
+        <div class="grid grid-cols-2 gap-5">
+            <button id="check_day" type="button" class="bg- dark:bg-lime-900  p-2 border-4 border-slate-950
+                                                      dark:border-slate-50">
+                <b>[show]</b>
+            </button>
+            <button id="new_date" type="button" class="bg-stone-300 dark:bg-inherit  p-2 border-4
+                                                       border-slate-950 dark:border-slate-50">
+                <b>[new date]</b>
             </button>
         </div>
         <p id="reveal_text"></p>
